@@ -8,7 +8,7 @@ let timer = false;
 
 function animace(){
     hod = Math.ceil(Math.random() * 6);
-    cube.src = `img/kostka${hod}.png`;
+    cube.src = `img/${hod}.svg`;
 }
 
 play.addEventListener('click', () => {
@@ -20,7 +20,7 @@ play.addEventListener('click', () => {
         timer = false;
         hody.push(hod);
         result.innerHTML = statistika();
-        play.innerText = 'Hrej';
+        play.innerText = 'Hrát';
     }
 });
 

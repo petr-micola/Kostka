@@ -1,0 +1,49 @@
+div, footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2.5rem 0 2.5rem 0;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+header, footer {
+    min-height: 10vh;
+    padding: 1rem;
+}
+
+img, button {
+    border-radius:11px;
+}
+
+img {
+    background-color: white;
+}
+
+button {
+    transition: all 0.5s ease;
+	background-color:#3b60f5;
+    border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:18px;
+	padding:5px 22px;
+	text-decoration:none;
+}
+
+button:hover {
+	background-color:#8099ff;
+}
+
+button:focus {
+    outline: none;
+}
