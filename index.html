@@ -2,35 +2,132 @@
 <html lang="cs">
 
 <head>
-    <title>Kostka</title>
+    <title>Kostky</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Hazardní hra Kostky">
+    <meta name="keywords" content="Kostky">
+    <meta name="author" content="Petr Mičola">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/1.svg" type="image/x-icon">
 </head>
 
-<body class="bg-dark text-white">
+<body>
     <header>
-        <h1 class="text-center">Kostka</h1>
+        <h1>Kostky</h1>
     </header>
     <main>
         <div class="container">
-            <figure>
-                <img id="cube" src="img/6.svg" alt="Kostka">
-            </figure>
-            <div id="result">
-                <h3>Aktuální hod: 0</h3>
-                <p>Počet hodů: 0</p>
-                <p>Součet hodů: 0</p>
-                <p>Průměr hodů: 0.00</p>
-                <p>Maximum z hodů: 0</p>
-                <p>Minumum z hodů: 0</p>
+            <div class="row">
+                <div class="col-12 col-xl-4">
+                    <h2>Statistika</h2>
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Hráč 1</th>
+                                <th scope="col">Hráč 2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Počet hodů</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Průměr</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Maximum</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Minimum</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5.</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6.</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-12 col-xl-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Hráč 1</h3>
+                                <img src="img/1.svg" alt="Kostka 1">
+                            </div>
+                            <div class="col-6">
+                                <h3>Hráč 2</h3>
+                                <img src="img/2.svg" alt="Kostka 2">
+                            </div>
+                        </div>
+                    </div>
+                    <a class="button">Hod</a>
+                </div>
+                <div class="col-12 col-xl-4">
+                    <h2>Skóre</h2>
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Hráč 1</th>
+                                <th scope="col">Hráč 2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1.</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2.</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3.</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4.</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5.</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6.</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <button id="play">Začít</button>
         </div>
     </main>
     <footer>
@@ -47,7 +144,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="js/hra.js"></script>
 </body>
 
 </html>

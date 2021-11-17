@@ -1,8 +1,15 @@
-div, footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-color: #212124;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.87);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding-top: 2rem;
+    min-height: 10vh;
 }
 
 main {
@@ -10,40 +17,51 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 80vh;
-    padding: 2.5rem 0 2.5rem 0;
-    border-top: 2px solid gray;
-    border-bottom: 2px solid gray;
-}
-
-header, footer {
-    min-height: 10vh;
-    padding: 1rem;
-}
-
-img, button {
-    border-radius:11px;
 }
 
 img {
+    max-width: 100%;
+    border: 3px solid gray;
+    border-radius: 9px;
     background-color: white;
 }
 
-button {
-    transition: all 0.5s ease;
-	background-color:#3b60f5;
-    border: none;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-size:18px;
-	padding:5px 22px;
-	text-decoration:none;
+table {
+    text-align: justify;
+    border: 3px solid gray;
+    color: rgba(255, 255, 255, 0.87) !important;
 }
 
-button:hover {
-	background-color:#8099ff;
+a.button {
+    display: inline-block;
+    padding: 0.35em 53px;
+    margin: 1rem;
+    border: 0.1em solid #FFFFFF;
+    border-radius: 9px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2s;
 }
 
-button:focus {
-    outline: none;
+a.button:hover {
+    cursor: pointer;
+    color: #000000 !important;
+    background-color: #FFFFFF;
+}
+
+@media all and (max-width:30em) {
+    a.button {
+        display: block;
+    }
+}
+
+footer {
+    padding-top: 2rem;
+    min-height: 10vh;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: small;
 }

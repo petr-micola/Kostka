@@ -1,27 +1,31 @@
-const cube = document.getElementById('cube');
+let cube = document.getElementById('cube');
 const result = document.getElementById('result');
 const play = document.getElementById('play');
 
+let kolo = 0;
 let hod;
 let hody = [];
 let timer = false;
 
-function animace(){
+function animace() {
     hod = Math.ceil(Math.random() * 6);
     cube.src = `img/${hod}.svg`;
 }
 
-play.addEventListener('click', () => {
-    if (timer == false) {
-        timer = setInterval(animace, 100);
-        play.innerText = 'Stop';
-    } else {
-        clearInterval(timer);
-        timer = false;
-        hody.push(hod);
-        result.innerHTML = statistika();
-        play.innerText = 'Hrát';
+function kostkaStop() {
+    clearInterval(timer);
+    timer = false;
+    hody.push(hod);
+    result.innerHTML = statistika();
+    if (kolo % 2 == 0) {
+        cube = document.getElementById('cube2');
     }
+    kolo++;
+}
+
+play.addEventListener('click', () => {
+    timer = setInterval(animace, 180);
+    setTimeout(kostkaStop, 1500);
 });
 
 function suma() {
