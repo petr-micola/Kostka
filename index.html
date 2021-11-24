@@ -24,7 +24,7 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-xl-4">
+                <div class="col-12 col-lg-4">
                     <h2>Statistika</h2>
                     <table class="table table-borderless">
                         <thead>
@@ -68,64 +68,33 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="col-12 col-xl-4">
+                <div class="col-12 col-lg-4">
                     <div class="container">
                         <div class="row">
                             <div class="col-6">
                                 <h3>Hráč 1</h3>
-                                <img src="img/1.svg" alt="Kostka 1">
+                                <img id="cube1" src="img/1.svg" alt="Kostka 1">
                             </div>
                             <div class="col-6">
                                 <h3>Hráč 2</h3>
-                                <img src="img/2.svg" alt="Kostka 2">
+                                <img id="cube2" src="img/2.svg" alt="Kostka 2">
                             </div>
                         </div>
                     </div>
-                    <a class="button">Hod</a>
+                    <a id="btn" class="button">Hod</a>
                 </div>
-                <div class="col-12 col-xl-4">
+                <div class="col-12 col-lg-4">
                     <h2>Skóre</h2>
-                    <table class="table table-borderless">
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Hráč 1</th>
-                                <th scope="col">Hráč 2</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1.</th>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2.</th>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3.</th>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4.</th>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5.</th>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6.</th>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <section class="container">
+                        <div class="row">
+                            <div id="skore1" class="col-6">
+                                <h4>Hráč 1</h4>           
+                            </div>
+                            <div id="skore2" class="col-6">
+                                <h4>Hráč 2</h4>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
@@ -144,6 +113,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="js/main2.js"></script>
 </body>
 
 </html>

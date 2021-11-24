@@ -26,8 +26,10 @@ img {
     background-color: white;
 }
 
-table {
-    text-align: justify;
+table, section {
+    padding: 1rem;
+    min-height: 20rem;
+    text-align: center;
     border: 3px solid gray;
     color: rgba(255, 255, 255, 0.87) !important;
 }
