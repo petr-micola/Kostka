@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    padding-top: 2rem;
+    padding-top: 1rem;
     min-height: 10vh;
 }
 
@@ -26,9 +26,9 @@ img {
     background-color: white;
 }
 
-table, section {
+section {
     padding: 1rem;
-    min-height: 20rem;
+    min-height: 15rem;
     text-align: center;
     border: 3px solid gray;
     color: rgba(255, 255, 255, 0.87) !important;
@@ -62,7 +62,7 @@ a.button:hover {
 }
 
 footer {
-    padding-top: 2rem;
+    padding-top: 1rem;
     min-height: 10vh;
     color: rgba(255, 255, 255, 0.6);
     font-size: small;

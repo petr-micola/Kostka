@@ -26,47 +26,27 @@
             <div class="row">
                 <div class="col-12 col-lg-4">
                     <h2>Statistika</h2>
-                    <table class="table table-borderless">
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Hráč 1</th>
-                                <th scope="col">Hráč 2</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Počet hodů</th>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Průměr</th>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Maximum</th>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Minimum</th>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5.</th>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6.</th>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <section class="container">
+                        <div class="row">
+                            <div class="col-4">
+                                <h4>&zwnj;</h4>
+                                <div class="text-justify">
+                                    <p>Počet hodů</p>
+                                    <p>Průměr</p>
+                                    <p>Maximum</p>
+                                    <p>Minimum</p>
+                                </div>        
+                            </div>
+                            <div class="col-4">
+                                <h4>Hráč 1</h4>
+                                <div id="statistika1"></div>        
+                            </div>
+                            <div class="col-4">
+                                <h4>Hráč 2</h4>
+                                <div id="statistika2"></div>  
+                            </div>
+                        </div>
+                    </section>
                 </div>
                 <div class="col-12 col-lg-4">
                     <div class="container">
@@ -87,11 +67,22 @@
                     <h2>Skóre</h2>
                     <section class="container">
                         <div class="row">
-                            <div id="skore1" class="col-6">
-                                <h4>Hráč 1</h4>           
+                            <div class="col-4">
+                                <h4>&zwnj;</h4>
+                                <div class="text-justify">
+                                    <p>1.</p>
+                                    <p>2.</p>
+                                    <p>3.</p>
+                                    <p>Konec</p>
+                                </div>        
                             </div>
-                            <div id="skore2" class="col-6">
+                            <div class="col-4">
+                                <h4>Hráč 1</h4>
+                                <div id="skore1"></div>        
+                            </div>
+                            <div class="col-4">
                                 <h4>Hráč 2</h4>
+                                <div id="skore2"></div>  
                             </div>
                         </div>
                     </section>
