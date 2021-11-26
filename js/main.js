@@ -2,7 +2,6 @@ const btn = document.getElementById('btn');
 const result = document.getElementById('vysledek');
 
 let tables = document.querySelectorAll('section')
-
 let p1a = [];
 let p2a = [];
 let stats;
@@ -148,6 +147,9 @@ function end() {
     else if (p1total < p2total) result.innerHTML += `<h4>Hráč 2 vyhrál!</h4>`;
     else result.innerHTML += `<h4>Remíza!</h4>`;
     btn.innerHTML = 'Restart?';
+    btn.addEventListener('click', function () {
+        location.reload();
+    });
 }
 
 function start() {

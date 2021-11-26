@@ -6,15 +6,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Hazardní hra Kostky">
-    <meta name="keywords" content="Kostky">
+    <meta name="description" content="Hra Kostky.">
+    <meta name="keywords" content="Kostky, hry pro 2 hráče">
     <meta name="author" content="Petr Mičola">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/1.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -24,48 +24,7 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-4">
-                    <h2>Statistika</h2>
-                    <section class="container">
-                        <div class="row">
-                            <div class="col-4">
-                                <h4>&zwnj;</h4>
-                                <div class="text-justify">
-                                    <p>Počet hodů</p>
-                                    <p>Součet</p>
-                                    <p>Průměr</p>
-                                    <p>Maximum</p>
-                                    <p>Minimum</p>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <h4>Hráč 1</h4>
-                                <div id="statistika1"></div>
-                            </div>
-                            <div class="col-4">
-                                <h4>Hráč 2</h4>
-                                <div id="statistika2"></div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-6">
-                                <h3>Hráč 1</h3>
-                                <img id="cube1" src="img/1.svg" alt="Kostka 1">
-                            </div>
-                            <div class="col-6">
-                                <h3>Hráč 2</h3>
-                                <img id="cube2" src="img/1.svg" alt="Kostka 2">
-                            </div>
-                        </div>
-                    </div>
-                    <a id="btn" class="button">Hod</a>
-                    <div id="vysledek"></div>
-                </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-sm-6 col-lg-4">
                     <h2>Skóre</h2>
                     <section class="container">
                         <div class="row">
@@ -87,6 +46,47 @@
                             <div class="col-4">
                                 <h4>Hráč 2</h4>
                                 <div id="skore2"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Hráč 1</h3>
+                                <img id="cube1" src="img/1.svg" alt="Kostka 1">
+                            </div>
+                            <div class="col-6">
+                                <h3>Hráč 2</h3>
+                                <img id="cube2" src="img/1.svg" alt="Kostka 2">
+                            </div>
+                        </div>
+                    </div>
+                    <a id="btn" class="button">Hod</a>
+                    <div id="vysledek"></div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h2>Statistika</h2>
+                    <section class="container">
+                        <div class="row">
+                            <div class="col-4">
+                                <h4>&zwnj;</h4>
+                                <div class="text-justify">
+                                    <p>Počet hodů</p>
+                                    <p>Součet</p>
+                                    <p>Průměr</p>
+                                    <p>Maximum</p>
+                                    <p>Minimum</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <h4>Hráč 1</h4>
+                                <div id="statistika1"></div>
+                            </div>
+                            <div class="col-4">
+                                <h4>Hráč 2</h4>
+                                <div id="statistika2"></div>
                             </div>
                         </div>
                     </section>
