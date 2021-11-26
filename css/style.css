@@ -34,8 +34,30 @@ section {
     color: rgba(255, 255, 255, 0.87) !important;
 }
 
+.default {
+    transition: all 1s;
+    border-color: gray !important;
+}
+
+.p1 {
+    transition: all 1s;
+    border-color: #0077ff;
+}
+
+.p2 {
+    transition: all 1s;
+    border-color: #ff0076;
+}
+
+#statistika1,
+#statistika2,
+#skore1,
+#skore2 {
+    color: rgba(255, 255, 255, 0.7);
+}
+
 a.button {
-    display: inline-block;
+    display: block;
     padding: 0.35em 53px;
     margin: 1rem;
     border: 0.1em solid #FFFFFF;
@@ -53,12 +75,6 @@ a.button:hover {
     cursor: pointer;
     color: #000000 !important;
     background-color: #FFFFFF;
-}
-
-@media all and (max-width:30em) {
-    a.button {
-        display: block;
-    }
 }
 
 footer {

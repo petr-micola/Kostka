@@ -1,6 +1,8 @@
 const btn = document.getElementById('btn');
 const result = document.getElementById('vysledek');
 
+let tables = document.querySelectorAll('section')
+
 let p1a = [];
 let p2a = [];
 let stats;
@@ -10,6 +12,12 @@ let kolo = 0;
 let timer;
 let p1;
 let p2;
+
+for (let i = 0; i < tables.length; i++) {
+    tables[i].classList.add('p1');
+}
+cube = document.getElementById('cube1');
+cube.classList.add('p1');
 
 function animation() {
     if (kolo % 2 == 0) {
@@ -73,6 +81,19 @@ function cancel() {
         stats.innerHTML += `<p>${(sum()/p1a.length).toFixed(2)}</p>`;
         stats.innerHTML += `<p>${max()}</p>`;
         stats.innerHTML += `<p>${min()}</p>`;
+
+        cube.classList.add('default');
+        for (let i = 0; i < tables.length; i++) {
+            tables[i].classList.remove('p1');
+        }
+        for (let i = 0; i < tables.length; i++) {
+            tables[i].classList.add('p2');
+        }
+        cube = document.getElementById('cube2');
+        score = document.getElementById('skore2');
+        stats = document.getElementById('statistika2');
+        cube.classList.remove('default');
+        cube.classList.add('p2');
     } else {
         p2a.push(p2);
         score.innerHTML += `<p>${p2}</p>`;
@@ -81,14 +102,27 @@ function cancel() {
         stats.innerHTML += `<p>${(sum()/p2a.length).toFixed(2)}</p>`;
         stats.innerHTML += `<p>${max()}</p>`;
         stats.innerHTML += `<p>${min()}</p>`;
+
+        cube.classList.add('default');
+        for (let i = 0; i < tables.length; i++) {
+            tables[i].classList.remove('p2');
+        }
+        for (let i = 0; i < tables.length; i++) {
+            tables[i].classList.add('p1');
+        }
+        cube = document.getElementById('cube1');
+        score = document.getElementById('skore1');
+        stats = document.getElementById('statistika1');
+        cube.classList.remove('default');
+        cube.classList.add('p1');
     }
     kolo++;
-    if (kolo == 6) end();
-    btn.addEventListener('click', test);
+    if (kolo == 12) end();
+    btn.addEventListener('click', start);
 }
 
 function game() {
-    btn.removeEventListener('click', test);
+    btn.removeEventListener('click', start);
     if (kolo % 2 == 0) {
         cube = document.getElementById('cube1');
         score = document.getElementById('skore1');
@@ -103,16 +137,21 @@ function game() {
 }
 
 function end() {
+    for (let i = 0; i < tables.length; i++) {
+        tables[i].classList.add('default');
+    }
+    cube.classList.add('default');
     let p1total = sum();
     kolo++;
     let p2total = sum();
-    if (p1total > p2total) result.innerHTML += `<p>Blahopřejeme, hráč 1 vyhrál!</p>`;
-    else if (p1total < p2total) result.innerHTML += `<p>Blahopřejeme, hráč 2 vyhrál!</p>`;
-    else result.innerHTML += `<p>Remíza!</p>`;
+    if (p1total > p2total) result.innerHTML += `<h4>Hráč 1 vyhrál!</h4>`;
+    else if (p1total < p2total) result.innerHTML += `<h4>Hráč 2 vyhrál!</h4>`;
+    else result.innerHTML += `<h4>Remíza!</h4>`;
+    btn.innerHTML = 'Restart?';
 }
 
-function test() {
-    if (kolo < 6) game();
+function start() {
+    if (kolo < 12) game();
 }
 
-btn.addEventListener('click', test);
+btn.addEventListener('click', start);
